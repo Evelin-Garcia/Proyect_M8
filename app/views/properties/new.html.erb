@@ -1,0 +1,37 @@
+<br><br>
+
+<h1>Nueva Propiedad</h1>
+
+<div class="row">
+  <div class="col-6">
+<h3>Ingrese una nueva propiedad</h3>
+
+<%= form_with model: Property.new do |form| %>
+  <div class="form-check">
+    <%= form.label :operation, "Operación" %>
+    <%= form.text_field :operation, class: 'form-control' %>
+  </div>
+  <div class="form-check">
+    <%= form.label :image, "Imagen" %>
+    <%= form.text_field :image, class: 'form-control'%>
+  </div>
+  <div class="form-check">
+    <%= form.label :description, "Descripción" %>
+    <%= form.text_field :description, class: 'form-control' %>
+      </div>
+  <div class="form-check">
+    <%= form.label :ubication, "Ubicación" %>
+    <%= form.text_field :ubication, class: 'form-control'%>
+  </div>
+  <div class="form-check">
+    <%= form.label :price, "Precio" %>
+    <%= form.number_field :price, class: 'form-control'%>
+  </div>
+
+  <br>
+    <%= form.submit  "Crear", class: "btn btn-success mt-3" %>
+<% end %>
+<br>
+  <%= link_to 'Back', properties_path %>
+  </div>
+  </div>
