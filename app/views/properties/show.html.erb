@@ -1,4 +1,9 @@
 <br><br>
+<div class="container">
+<div class="row">
+  <div class="col-6">
+  <h1>Detalle Propiedad</h1>
+<img style="width: 200px;" src="<%=@property.image%>" />
 <p>
   <strong>Operación:</strong>
   <%= @property.operation %>
@@ -20,9 +25,12 @@
 </p>
 
 <p>
-  <strong>Precio:</strong>
+  <strong>Precio UF:</strong>
   <%= @property.price %>
 </p>
 
 <%= link_to 'Editar', edit_property_path(@property) %> |
 <%= link_to 'Volver', properties_path %>
+</div>
+</div>
+</div>
