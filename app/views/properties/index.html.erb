@@ -1,8 +1,11 @@
 <p id="notice"><%= notice %></p>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+<h1>Propiedades </h1>
 
-<h1>Propiedades</h1>
-
-<table>
+<div class="table-responsive-lg">
+<table class="table table-striped table-sm">
   <thead>
     <tr>
       <th>Operacion</th>
@@ -23,16 +26,20 @@
         <td><%= property.description %></td>
         <td><%= property.ubication %></td>
         <td><%= property.price %></td>
-        <td><%= link_to 'Show', property %></td>
-        <td><%= link_to 'Edit', edit_property_path(property) %></td>
-        <td><%= link_to 'Destroy', property, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', property, class: 'btn btn-outline-success' %></td>
+        <td><%= link_to 'Editar', edit_property_path(property), class: 'btn btn-outline-warning' %></td>
+        <td><%= link_to 'Eliminar', property, method: :delete, data: { confirm: 'Are you sure?'}, class: 'btn btn-outline-danger' %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
+</div>
 <br>
 
 <%= link_to 'Agregar Nueva Propiedad', new_property_path %>
+<br><br>
+<%= link_to 'Volver al Inicio', welcome_path %>
 <br>
-
+</div>
+</div>
+</div>
