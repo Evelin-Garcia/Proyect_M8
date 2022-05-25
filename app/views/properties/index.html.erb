@@ -28,7 +28,7 @@
         <td><%= property.price %></td>
         <td><%= link_to 'Ver Propiedad', property, class: 'btn btn-outline-success'%></td>
         <td><%= link_to 'Editar', edit_property_path(property), class: 'btn btn-outline-warning' %></td>
-        <td><%= link_to 'Eliminar', property, method: :delete, data: { confirm: 'Are you sure?'}, class: 'btn btn-outline-danger' %></td>
+        <td><%= link_to 'Eliminar', property, method: :delete, data: { confirm: 'Está seguro?'}, class: 'btn btn-outline-danger' %></td>
       </tr>
     <% end %>
   </tbody>
@@ -36,9 +36,9 @@
 </div>
 <br>
 
-<%= link_to 'Agregar Nueva Propiedad', new_property_path %>
+<%= link_to 'Agregar Nueva Propiedad', new_property_path, class: 'btn btn-info'  %>
 <br><br>
-<%= link_to 'Volver al Inicio', welcome_path %>
+<%= link_to 'Volver al Inicio', welcome_path, class: 'btn btn-success' %>
 <br>
 </div>
 </div>

@@ -31,7 +31,8 @@
 <div class="col">
 <img style="width: 200px;" src="<%=propiedad.image%>" />
 <h2><%=propiedad.operation%></h2>
-<a class="btn btn-outline-success mt-3" href="http://localhost:3000/properties">Detalles</a>
+
+<%= link_to 'Detalles', properties_path, class: 'btn btn-outline-success mt-3' %>
 </div>
 <% end %>
 </div>
